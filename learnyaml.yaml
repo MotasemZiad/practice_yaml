@@ -126,10 +126,10 @@ bar:
 explicit_string: !!str 0.5
 # Some parsers implement language specific tags, like this one for Python's
 # complex number type.
-python_complex_number: !!python/complex 1+2j
+# python_complex_number: !!python/complex 1+2j
 
 # We can also use yaml complex keys with language specific tags
-? !!python/tuple [5, 7]
+# ? !!python/tuple [5, 7]
 : Fifty Seven
 # Would be {(5, 7): 'Fifty Seven'} in Python
 
@@ -156,6 +156,7 @@ set:
   ? item1
   ? item2
   ? item3
+
 or: {item1, item2, item3}
 
 # Sets are just maps with null values; the above is equivalent to:
